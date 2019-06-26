@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo do livro"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textEscritor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do escritor" />
+
+        <ImageView
+            android:id="@+id/imageCapa"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/textLacamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data de laçamento" />
+
+        <TextView
+            android:id="@+id/textPreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preço do livro"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btCompraLivro"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_shop_black_24dp"
+            android:text="Comprar" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
